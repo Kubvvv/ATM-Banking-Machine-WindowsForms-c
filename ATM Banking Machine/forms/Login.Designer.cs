@@ -132,9 +132,9 @@
             this.loginBtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.loginBtn.Location = new System.Drawing.Point(601, 313);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.OnHoverBorderColor = System.Drawing.Color.Gray;
+            this.loginBtn.OnHoverBorderColor = System.Drawing.Color.Black;
             this.loginBtn.OnHoverButtonColor = System.Drawing.Color.DarkSlateGray;
-            this.loginBtn.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.loginBtn.OnHoverTextColor = System.Drawing.Color.Black;
             this.loginBtn.Size = new System.Drawing.Size(133, 54);
             this.loginBtn.TabIndex = 24;
             this.loginBtn.Text = "LOGIN";

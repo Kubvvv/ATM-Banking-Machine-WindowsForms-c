@@ -6,7 +6,7 @@ namespace ePOSOne.btnProduct
 {
     public class Button_WOC : Button
     {
-        private Color _borderColor = Color.Silver;
+        private Color _borderColor = Color.White;
         private Color _onHoverBorderColor = Color.Gray;
         private Color _buttonColor = Color.Red;
         private Color _onHoverButtonColor = Color.Yellow;

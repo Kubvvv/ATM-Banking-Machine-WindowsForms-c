@@ -73,9 +73,9 @@
             this.backLbl.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.backLbl.Location = new System.Drawing.Point(0, 0);
             this.backLbl.Name = "backLbl";
-            this.backLbl.Size = new System.Drawing.Size(107, 37);
+            this.backLbl.Size = new System.Drawing.Size(238, 37);
             this.backLbl.TabIndex = 19;
-            this.backLbl.Text = "<BACK";
+            this.backLbl.Text = "<BACK TO LOGIN";
             this.backLbl.Click += new System.EventHandler(this.backLbl_Click);
             // 
             // exitLbl
@@ -93,7 +93,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Text", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(61, 18);
+            this.label1.Location = new System.Drawing.Point(64, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(726, 69);
             this.label1.TabIndex = 0;
