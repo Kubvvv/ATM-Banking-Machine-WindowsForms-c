@@ -9,12 +9,6 @@ namespace ATM_Banking_Machine
         {
             InitializeComponent();
         }
-
-        private void exitLbl_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        } //exiting the app
-
         private void creatingAccountBtn_Click(object sender, EventArgs e) //button with addNewAccount method
         {
             addNewAccount();
@@ -64,6 +58,10 @@ namespace ATM_Banking_Machine
             Login log = new Login();
             this.Hide();
             log.Show();
-        }
+        } //back to login page
+        private void exitLbl_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        } //exiting the app
     }
 }
