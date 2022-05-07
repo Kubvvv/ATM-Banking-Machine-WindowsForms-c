@@ -139,6 +139,7 @@
             this.changePinBtn.Text = "CHANGE PIN";
             this.changePinBtn.TextColor = System.Drawing.Color.Black;
             this.changePinBtn.UseVisualStyleBackColor = false;
+            this.changePinBtn.Click += new System.EventHandler(this.changePinBtn_Click);
             // 
             // withdrawBtn
             // 

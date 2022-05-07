@@ -49,5 +49,12 @@ namespace ATM_Banking_Machine
             this.Hide();
             wd.Show();
         }
+
+        private void changePinBtn_Click(object sender, EventArgs e)
+        {
+            ChangePin cp = new ChangePin();
+            this.Hide();
+            cp.Show();
+        }
     }
 }
