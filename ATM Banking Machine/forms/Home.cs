@@ -70,5 +70,12 @@ namespace ATM_Banking_Machine
             this.Hide();
             bal.Show();
         }
+
+        private void miniStatementBtn_Click(object sender, EventArgs e)
+        {
+            MiniStatement ms = new MiniStatement();
+            this.Hide();
+            ms.Show();
+        }
     }
 }

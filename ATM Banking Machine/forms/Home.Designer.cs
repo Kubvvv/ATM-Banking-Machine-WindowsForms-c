@@ -178,6 +178,7 @@
             this.miniStatementBtn.Text = "      MINI \r\nSTATEMENT";
             this.miniStatementBtn.TextColor = System.Drawing.Color.Black;
             this.miniStatementBtn.UseVisualStyleBackColor = false;
+            this.miniStatementBtn.Click += new System.EventHandler(this.miniStatementBtn_Click);
             // 
             // balanceBtn
             // 
