@@ -56,5 +56,12 @@ namespace ATM_Banking_Machine
             this.Hide();
             cp.Show();
         }
+
+        private void fastCashBtn_Click(object sender, EventArgs e)
+        {
+            FastCash fc = new FastCash();
+            this.Hide();
+            fc.Show();
+        }
     }
 }

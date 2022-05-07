@@ -121,6 +121,7 @@
             this.fastCashBtn.Text = "FAST CASH";
             this.fastCashBtn.TextColor = System.Drawing.Color.Black;
             this.fastCashBtn.UseVisualStyleBackColor = false;
+            this.fastCashBtn.Click += new System.EventHandler(this.fastCashBtn_Click);
             // 
             // changePinBtn
             // 
