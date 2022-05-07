@@ -1,6 +1,6 @@
 ﻿namespace ATM_Banking_Machine
 {
-    partial class Deposit
+    partial class Withdraw
     {
         /// <summary>
         /// Required designer variable.
@@ -33,9 +33,10 @@
             this.exitLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.depositAmountTb = new System.Windows.Forms.TextBox();
+            this.withdrawAmountTb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.depositBtn = new ePOSOne.btnProduct.Button_WOC();
+            this.withdrawBtn = new ePOSOne.btnProduct.Button_WOC();
+            this.availableBalanceLbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,8 +49,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(850, 100);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(834, 100);
+            this.panel1.TabIndex = 2;
             // 
             // backLbl
             // 
@@ -88,64 +89,75 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Heading", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(363, 103);
+            this.label4.Location = new System.Drawing.Point(353, 103);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 39);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Deposit";
+            this.label4.Size = new System.Drawing.Size(138, 39);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Withdraw";
             // 
-            // depositAmountTb
+            // withdrawAmountTb
             // 
-            this.depositAmountTb.Font = new System.Drawing.Font("Sitka Heading", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.depositAmountTb.Location = new System.Drawing.Point(414, 156);
-            this.depositAmountTb.Name = "depositAmountTb";
-            this.depositAmountTb.Size = new System.Drawing.Size(200, 41);
-            this.depositAmountTb.TabIndex = 28;
+            this.withdrawAmountTb.Font = new System.Drawing.Font("Sitka Heading", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.withdrawAmountTb.Location = new System.Drawing.Point(323, 202);
+            this.withdrawAmountTb.Name = "withdrawAmountTb";
+            this.withdrawAmountTb.Size = new System.Drawing.Size(200, 41);
+            this.withdrawAmountTb.TabIndex = 30;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Heading", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(272, 156);
+            this.label3.Location = new System.Drawing.Point(181, 202);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 39);
-            this.label3.TabIndex = 27;
+            this.label3.TabIndex = 29;
             this.label3.Text = "Amount";
             // 
-            // depositBtn
+            // withdrawBtn
             // 
-            this.depositBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.depositBtn.BorderColor = System.Drawing.Color.Black;
-            this.depositBtn.ButtonColor = System.Drawing.Color.DarkCyan;
-            this.depositBtn.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.depositBtn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.depositBtn.Location = new System.Drawing.Point(432, 213);
-            this.depositBtn.Name = "depositBtn";
-            this.depositBtn.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.depositBtn.OnHoverButtonColor = System.Drawing.Color.DarkSlateGray;
-            this.depositBtn.OnHoverTextColor = System.Drawing.Color.Black;
-            this.depositBtn.Size = new System.Drawing.Size(168, 58);
-            this.depositBtn.TabIndex = 29;
-            this.depositBtn.Text = "DEPOSIT";
-            this.depositBtn.TextColor = System.Drawing.Color.Black;
-            this.depositBtn.UseVisualStyleBackColor = false;
-            this.depositBtn.Click += new System.EventHandler(this.depositBtn_Click);
+            this.withdrawBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.withdrawBtn.BorderColor = System.Drawing.Color.Black;
+            this.withdrawBtn.ButtonColor = System.Drawing.Color.DarkCyan;
+            this.withdrawBtn.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.withdrawBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.withdrawBtn.Location = new System.Drawing.Point(339, 249);
+            this.withdrawBtn.Name = "withdrawBtn";
+            this.withdrawBtn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.withdrawBtn.OnHoverButtonColor = System.Drawing.Color.DarkSlateGray;
+            this.withdrawBtn.OnHoverTextColor = System.Drawing.Color.Black;
+            this.withdrawBtn.Size = new System.Drawing.Size(168, 58);
+            this.withdrawBtn.TabIndex = 31;
+            this.withdrawBtn.Text = "WITHDRAW";
+            this.withdrawBtn.TextColor = System.Drawing.Color.Black;
+            this.withdrawBtn.UseVisualStyleBackColor = false;
+            this.withdrawBtn.Click += new System.EventHandler(this.withdrawBtn_Click);
             // 
-            // Deposit
+            // availableBalanceLbl
+            // 
+            this.availableBalanceLbl.AutoSize = true;
+            this.availableBalanceLbl.Font = new System.Drawing.Font("Sitka Heading", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.availableBalanceLbl.Location = new System.Drawing.Point(323, 160);
+            this.availableBalanceLbl.Name = "availableBalanceLbl";
+            this.availableBalanceLbl.Size = new System.Drawing.Size(226, 39);
+            this.availableBalanceLbl.TabIndex = 32;
+            this.availableBalanceLbl.Text = "Available balance";
+            // 
+            // Withdraw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 300);
-            this.Controls.Add(this.depositBtn);
-            this.Controls.Add(this.depositAmountTb);
+            this.ClientSize = new System.Drawing.Size(834, 361);
+            this.Controls.Add(this.availableBalanceLbl);
+            this.Controls.Add(this.withdrawBtn);
+            this.Controls.Add(this.withdrawAmountTb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Deposit";
+            this.Name = "Withdraw";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Deposit";
-            this.Load += new System.EventHandler(this.Deposit_Load);
+            this.Text = "Withdraw";
+            this.Load += new System.EventHandler(this.Withdraw_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -160,8 +172,9 @@
         private Label exitLbl;
         private Label label1;
         private Label label4;
-        private TextBox depositAmountTb;
+        private TextBox withdrawAmountTb;
         private Label label3;
-        private ePOSOne.btnProduct.Button_WOC depositBtn;
+        private ePOSOne.btnProduct.Button_WOC withdrawBtn;
+        private Label availableBalanceLbl;
     }
 }

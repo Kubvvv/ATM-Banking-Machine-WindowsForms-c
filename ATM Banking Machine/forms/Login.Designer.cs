@@ -120,6 +120,7 @@
             this.loginPinTb.Font = new System.Drawing.Font("Sitka Heading", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.loginPinTb.Location = new System.Drawing.Point(567, 257);
             this.loginPinTb.Name = "loginPinTb";
+            this.loginPinTb.PasswordChar = '*';
             this.loginPinTb.Size = new System.Drawing.Size(200, 41);
             this.loginPinTb.TabIndex = 23;
             // 

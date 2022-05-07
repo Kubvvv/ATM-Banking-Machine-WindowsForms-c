@@ -157,6 +157,7 @@
             this.withdrawBtn.Text = "WITHDRAW";
             this.withdrawBtn.TextColor = System.Drawing.Color.Black;
             this.withdrawBtn.UseVisualStyleBackColor = false;
+            this.withdrawBtn.Click += new System.EventHandler(this.withdrawBtn_Click);
             // 
             // miniStatementBtn
             // 

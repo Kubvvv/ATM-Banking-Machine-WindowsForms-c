@@ -42,5 +42,12 @@ namespace ATM_Banking_Machine
             this.Hide();
             dp.Show();
         }
+
+        private void withdrawBtn_Click(object sender, EventArgs e)
+        {
+            Withdraw wd = new Withdraw();
+            this.Hide();
+            wd.Show();
+        }
     }
 }
