@@ -196,6 +196,7 @@
             this.balanceBtn.Text = "BALANCE";
             this.balanceBtn.TextColor = System.Drawing.Color.Black;
             this.balanceBtn.UseVisualStyleBackColor = false;
+            this.balanceBtn.Click += new System.EventHandler(this.balanceBtn_Click);
             // 
             // logoutLbl
             // 

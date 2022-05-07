@@ -63,5 +63,12 @@ namespace ATM_Banking_Machine
             this.Hide();
             fc.Show();
         }
+
+        private void balanceBtn_Click(object sender, EventArgs e)
+        {
+            Balance bal = new Balance();
+            this.Hide();
+            bal.Show();
+        }
     }
 }
