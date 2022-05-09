@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewAccount));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.backLbl = new System.Windows.Forms.Label();
             this.exitLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,13 +52,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.phoneTb = new System.Windows.Forms.TextBox();
+            this.backPB = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.backPB)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
-            this.panel1.Controls.Add(this.backLbl);
+            this.panel1.Controls.Add(this.backPB);
             this.panel1.Controls.Add(this.exitLbl);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -66,17 +68,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(850, 100);
             this.panel1.TabIndex = 0;
-            // 
-            // backLbl
-            // 
-            this.backLbl.AutoSize = true;
-            this.backLbl.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.backLbl.Location = new System.Drawing.Point(0, 0);
-            this.backLbl.Name = "backLbl";
-            this.backLbl.Size = new System.Drawing.Size(238, 37);
-            this.backLbl.TabIndex = 19;
-            this.backLbl.Text = "<BACK TO LOGIN";
-            this.backLbl.Click += new System.EventHandler(this.backLbl_Click);
             // 
             // exitLbl
             // 
@@ -297,6 +288,17 @@
             this.phoneTb.Size = new System.Drawing.Size(200, 41);
             this.phoneTb.TabIndex = 21;
             // 
+            // backPB
+            // 
+            this.backPB.Image = ((System.Drawing.Image)(resources.GetObject("backPB.Image")));
+            this.backPB.Location = new System.Drawing.Point(3, 0);
+            this.backPB.Name = "backPB";
+            this.backPB.Size = new System.Drawing.Size(64, 60);
+            this.backPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.backPB.TabIndex = 43;
+            this.backPB.TabStop = false;
+            this.backPB.Click += new System.EventHandler(this.backPB_Click);
+            // 
             // NewAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -331,6 +333,7 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.backPB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,10 +360,10 @@
         private ComboBox educationCb;
         private TextBox occupationTb;
         private DateTimePicker dateOfBirth;
-        private Label backLbl;
         private ePOSOne.btnProduct.Button_WOC creatingAccountBtn;
         private Label label2;
         private Label label11;
         private TextBox phoneTb;
+        private PictureBox backPB;
     }
 }

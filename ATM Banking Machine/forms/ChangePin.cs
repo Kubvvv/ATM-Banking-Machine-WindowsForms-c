@@ -18,12 +18,6 @@ namespace ATM_Banking_Machine
             InitializeComponent();
         }
 
-        private void backLbl_Click(object sender, EventArgs e) //back to menu lbl
-        {
-            Home home = new Home();
-            this.Hide();
-            home.Show();
-        }
         private void exitLbl_Click(object sender, EventArgs e) //exit app
         {
             Application.Exit();
@@ -47,6 +41,10 @@ namespace ATM_Banking_Machine
             {
                 MessageBox.Show("Wrong old pin!");
             }
+            else if(oldPinTb.Text == newPinTb.Text)
+            {
+                MessageBox.Show("New pin must be different from the old pin!");
+            }
             else
             {
                 var res = context.Accounts.SingleOrDefault(x => x.AccNum == acc);
@@ -61,5 +59,12 @@ namespace ATM_Banking_Machine
                 }
             }
         } //method changing the pin if everything is correct
+
+        private void backPB_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            this.Hide();
+            home.Show();
+        }//back to menu picture
     }
 }

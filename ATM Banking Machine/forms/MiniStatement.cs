@@ -18,7 +18,7 @@ namespace ATM_Banking_Machine
             InitializeComponent();
         }
 
-        private void backLbl_Click(object sender, EventArgs e) //back to menu
+        private void backPB_Click(object sender, EventArgs e)//back to menu
         {
             Home home = new Home();
             this.Hide();
@@ -49,5 +49,7 @@ namespace ATM_Banking_Machine
         {
             miniStatementShow();
         }
+
+        
     }
 }

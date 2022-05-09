@@ -67,16 +67,16 @@ namespace ATM_Banking_Machine
             }
             
         }
-        private void backLbl_Click(object sender, EventArgs e)
-        {
-            Login log = new Login();
-            this.Hide();
-            log.Show();
-        } //back to login page
         private void exitLbl_Click(object sender, EventArgs e)
         {
             Application.Exit();
         } //exiting the app
 
+        private void backPB_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            this.Hide();
+            log.Show();
+        }//back to login page
     }
 }

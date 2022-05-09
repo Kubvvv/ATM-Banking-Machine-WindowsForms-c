@@ -44,6 +44,10 @@ namespace ATM_Banking_Machine
             {
                 MessageBox.Show("You dont have enought money!");
             }
+            else if (Convert.ToInt32(withdrawAmountTb.Text) > 5000)
+            {
+                MessageBox.Show("You cant withdraw more than 5000 in one transaction!");
+            }
             else
             {
                 newBalance = balance - Convert.ToInt32(withdrawAmountTb.Text);
@@ -89,12 +93,13 @@ namespace ATM_Banking_Machine
 
         }
 
-        private void backLbl_Click(object sender, EventArgs e)
+
+        private void backPB_Click(object sender, EventArgs e)
         {
             Home home = new Home();
             this.Hide();
             home.Show();
-        } //back to home label
+        }//back to home label
 
         private void exitLbl_Click(object sender, EventArgs e) //exit button
         {

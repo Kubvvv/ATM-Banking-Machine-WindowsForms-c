@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FastCash));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.backLbl = new System.Windows.Forms.Label();
             this.exitLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,13 +40,15 @@
             this.fastCash200 = new ePOSOne.btnProduct.Button_WOC();
             this.fastCash500 = new ePOSOne.btnProduct.Button_WOC();
             this.availableBalanceLbl = new System.Windows.Forms.Label();
+            this.backPB = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.backPB)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
-            this.panel1.Controls.Add(this.backLbl);
+            this.panel1.Controls.Add(this.backPB);
             this.panel1.Controls.Add(this.exitLbl);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -54,17 +56,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(850, 100);
             this.panel1.TabIndex = 4;
-            // 
-            // backLbl
-            // 
-            this.backLbl.AutoSize = true;
-            this.backLbl.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.backLbl.Location = new System.Drawing.Point(0, 0);
-            this.backLbl.Name = "backLbl";
-            this.backLbl.Size = new System.Drawing.Size(237, 37);
-            this.backLbl.TabIndex = 19;
-            this.backLbl.Text = "<BACK TO MENU";
-            this.backLbl.Click += new System.EventHandler(this.backLbl_Click);
             // 
             // exitLbl
             // 
@@ -222,6 +213,17 @@
             this.availableBalanceLbl.TabIndex = 44;
             this.availableBalanceLbl.Text = "Available balance";
             // 
+            // backPB
+            // 
+            this.backPB.Image = ((System.Drawing.Image)(resources.GetObject("backPB.Image")));
+            this.backPB.Location = new System.Drawing.Point(0, 0);
+            this.backPB.Name = "backPB";
+            this.backPB.Size = new System.Drawing.Size(64, 60);
+            this.backPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.backPB.TabIndex = 41;
+            this.backPB.TabStop = false;
+            this.backPB.Click += new System.EventHandler(this.backPB_Click);
+            // 
             // FastCash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -243,6 +245,7 @@
             this.Load += new System.EventHandler(this.FastCash_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.backPB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,7 +254,6 @@
         #endregion
 
         private Panel panel1;
-        private Label backLbl;
         private Label exitLbl;
         private Label label1;
         private Label label4;
@@ -262,5 +264,6 @@
         private ePOSOne.btnProduct.Button_WOC fastCash200;
         private ePOSOne.btnProduct.Button_WOC fastCash500;
         private Label availableBalanceLbl;
+        private PictureBox backPB;
     }
 }

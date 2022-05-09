@@ -23,23 +23,27 @@ namespace ATM_Banking_Machine
 
         string acc = Login.accNumber; //accountNumber
 
-        private void backLbl_Click(object sender, EventArgs e) //back to home menu
-        {
-            Home home = new Home();
-            this.Hide();
-            home.Show();
-        }
-
         private void exitLbl_Click(object sender, EventArgs e)//exiting the app
         {
             Application.Exit();
         }
+
+        private void backPB_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            this.Hide();
+            home.Show();
+        }//back to home page
 
         private void depositBtn_Click(object sender, EventArgs e) //adding deposit amount to overall balance in database account, and creating transaction
         {
             if(depositAmountTb.Text == "" || Convert.ToInt32(depositAmountTb.Text) <= 0)
             {
                 MessageBox.Show("Enter the amount to deposit!");
+            }
+            else if(Convert.ToInt32(depositAmountTb.Text) > 10000)
+            {
+                MessageBox.Show("You cant deposit more than 10000 in one transaction");
             }
             else
             {

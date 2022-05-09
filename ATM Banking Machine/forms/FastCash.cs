@@ -31,14 +31,13 @@ namespace ATM_Banking_Machine
             balance = context.Accounts.Where(x => x.AccNum == acc).FirstOrDefault().Balance;
             availableBalanceLbl.Text = $"Balance: {balance.ToString()} €";
         }
-        
 
-        private void backLbl_Click(object sender, EventArgs e)
+        private void backPB_Click(object sender, EventArgs e)
         {
             Home home = new Home();
             this.Hide();
             home.Show();
-        } //back to menu
+        }//back to menu picture
 
         private void exitLbl_Click(object sender, EventArgs e) //exit app
         {

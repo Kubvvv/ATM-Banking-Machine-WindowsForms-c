@@ -34,7 +34,7 @@ namespace ATM_Banking_Machine
             Application.Exit();
         }
 
-        private void backLbl_Click(object sender, EventArgs e) //back to home page
+        private void backPB_Click(object sender, EventArgs e)//back to home page
         {
             Home home = new Home();
             this.Hide();
