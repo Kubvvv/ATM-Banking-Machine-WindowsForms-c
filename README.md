@@ -6,9 +6,9 @@ Po zjechaniu na dół listy w zakładce Inne zestawy narzędzi, odhaczyć Magazy
 
 Po prawej stronie w Eksploratorze rozwiązań(Solution Explorer) kliknąć prawym na ATM Banking machine, otworzyć Zarządzaj pakietami NuGet
 zainstalować pakiety
-Microsoft.EntityFrameworkCore.SqlServer
-Microsoft.EntityFrameworkCore.Design
-Microsoft.EntityFrameworkCore.Tools
+1. Microsoft.EntityFrameworkCore.SqlServer
+2. Microsoft.EntityFrameworkCore.Design
+3. Microsoft.EntityFrameworkCore.Tools
 
 po zainstalowaniu tych pakietów, trzeba przejść do zakładki Narzędzia -> Manedżer pakietów NuGet -> Konsola menadżera pakietów
 wkleić
