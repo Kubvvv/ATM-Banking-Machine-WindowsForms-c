@@ -1,6 +1,6 @@
 Instrukcja jak odpalić projekt
 
-W środowisku Visual Studio Code trzeba miec zainstalowane magazynowanie i przetwarzanie danych.
+W środowisku Visual Studio trzeba miec zainstalowane magazynowanie i przetwarzanie danych.
 Trzeba wejść w visual studio installer, w opcji Visual Studio Community 2022 kliknąć modyfikuj.
 Po zjechaniu na dół listy w zakładce Inne zestawy narzędzi, odhaczyć Magazynowanie i przetwarzanie danych oraz zatwierdzić wybór.
 
