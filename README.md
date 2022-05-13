@@ -10,12 +10,9 @@ zainstalować pakiety
 2. Microsoft.EntityFrameworkCore.Design
 3. Microsoft.EntityFrameworkCore.Tools
 
-po zainstalowaniu tych pakietów, trzeba przejść do zakładki Narzędzia -> Manedżer pakietów NuGet -> Konsola menadżera pakietów
-wkleić
+Przy otworzeniu projektu baza danych utworzy się automatycznie, oraz utworzy się przykładowy użytkownik
+Account Number : 1
+PIN : 1234
 
-1. Add-Migration InitialCreate
-2. Update-Database
-
-Po zrobieniu tych czynności utworzy się baza danych i można odpalić aplikacje.
-Na samym początku trzeba utworzyć konto, aby to zrobić wystarczy na głównym ekranie kliknac "SIGNUP"
+Można też utworzyć swoje konto, aby to zrobić wystarczy na głównym ekranie kliknac "SIGNUP"
 
